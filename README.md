@@ -6,7 +6,8 @@ Destinado ao uso do LGPD
 
 2 - estou deixando abaixo um css padrão para customização do layout do popup
 * style.css
-  ```sh
+
+```sh
 /**COOKIE POLICY*/
 #cookiePolicy {
     position: fixed;
