@@ -5,7 +5,8 @@ Destinado ao uso do LGPD
 - _cdn\widgets
 
 2 - estou deixando abaixo um css padrão para customização do layout do popup
-
+* style.css
+  ```sh
 /**COOKIE POLICY*/
 #cookiePolicy {
     position: fixed;
@@ -67,17 +68,21 @@ Destinado ao uso do LGPD
     text-transform: none;
     background: #578703;
 }
-
+```
+  
 3 - no seu thema, na pasta inc\footer.php
 
+```sh
 <?php
 require '_cdn/widgets/lgpd/lgpd.wc.php';
 ?>
-
+```
+  
 4 - no index.php geral, não do thema, o que fica na raiz do projeto. Inclua a linha abaixo
 
+```sh
 // LGPD
 define("COOKIEPOLICY", filter_input(INPUT_COOKIE, "cookiePolicy", FILTER_SANITIZE_STRIPPED));
-
+```
 OBS.: No meu caso em produção não funcionou o uso de cookie, mas não removi do projeto, então estou utilizando o localstorage para o controle do cookie
       fica a seu critério remover a parte do cookie ou do localstorage
